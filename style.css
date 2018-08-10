@@ -1,0 +1,30 @@
+.CodeMirror {
+  height: 400px;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 1fr 0.25fr;
+  grid-gap: 1px;
+  grid-template-areas: "Sidebar Editor" "Status Footer";
+}
+
+.Editor {
+  grid-area: Editor;
+}
+
+.Sidebar {
+  grid-area: Sidebar;
+}
+
+.Footer {
+  grid-area: Footer;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+
+.Status {
+  grid-area: Status;
+}

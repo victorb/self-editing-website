@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Self Editing Website</title>
+  <link rel="stylesheet" href="codemirror.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="Editor">
+      <button id="editor-offer-patch">Offer Patch</button>
+      <button id="editor-save">Save</button>
+      <button id="editor-approve" disabled>Approve Save</button>
+      <input id="editor-filename" type="text">
+      <select id="editor-syntax">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="md">Markdown</option>
+        <option value="js">JS</option>
+      </select>
+      <textarea id="editor" cols="50" rows="40"></textarea>
+    </div>
+    <div class="Sidebar">
+      <div id="files-wrapper">
+        <button id="files-new">New File</button>
+        <div id="files">Your files will show up here</div>
+      </div>
+    </div>
+    <div class="Footer">
+      <div id="history-wrapper">
+        <h1>Previous version was: <a id="history-link" href="#">Not yet found</a></h1>
+        <h3>More versions</h3>
+        <div id="history-versions">
+        </div>
+      </div>
+    </div>
+    <div class="Status">
+      <div id="chat-wrapper">
+        <input id="chat-message" type="input" /><button id="chat-send">Send</button>
+        <div id="chat"></div>
+      </div>
+    </div>
+  </div>
+  <script src="ipfs.js"></script>
+  <script src="codemirror.js"></script>
+  <script src="codemirror-css.js"></script>
+  <script src="codemirror-html.js"></script>
+  <script src="codemirror-js.js"></script>
+  <script src="codemirror-md.js"></script>
+  <script src="codemirror-xml.js"></script>
+  <script src="diff.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
