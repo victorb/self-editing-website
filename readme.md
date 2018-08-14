@@ -1,5 +1,7 @@
 ## self-editing website
 
+This editor/website was built in tandem with a live stream which recording you can watch here: https://www.youtube.com/watch?v=ud7WXPCxHyc
+
 most recent version: https://ipfs.io/ipfs/QmbYBnP7XEuVriCTr3ddcwWAVU9DRY1k75wmR4JczhE9pf
 
 
